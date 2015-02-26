@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    tools:context="${relativePackage}.${activityClass}" > 
+    
+    <TextView
+        android:id="@+id/displayAppNameText"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textSize="@android:dimen/app_icon_size" />
+    
+    <TextView
+        android:id="@+id/activePlayerText"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:gravity="end"
+        android:text=""
+        android:textSize="@android:dimen/app_icon_size" />
+ 
+    <Button 
+        android:id="@+id/leftUpButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/centerUpButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/rightUpButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+    
+    <Button 
+        android:id="@+id/leftMiddleButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/centerMiddleButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/rightMiddleButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+    
+     <Button 
+        android:id="@+id/leftDownButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/centerDownButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/rightDownButton"
+        android:text="" 
+        android:layout_columnSpan="1"
+        android:onClick="buttonClicked"/>
+ 
+    <Button 
+        android:id="@+id/startButton"
+        android:text="@string/start" 
+        android:layout_columnSpan="1"
+        android:onClick="start"/>
+ 
+    <Button 
+        android:id="@+id/resetButton"
+        android:text="@string/reset" 
+        android:layout_columnSpan="1"
+        android:onClick="reset"/>
+ 
+    <Button 
+        android:id="@+id/quitButton"
+        android:text="@string/quit" 
+        android:layout_columnSpan="1"
+        android:onClick="quit"/>
+     
+</GridLayout>
+
