@@ -20,8 +20,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        
+       
         
         changeButtonStates(false);
     	startResetStates(true);
@@ -115,6 +114,7 @@ public class MainActivity extends Activity {
     	startResetStates(false);
     }
     
+    
     private void startResetStates(boolean state){
     	Button startButtonState = (Button) findViewById(R.id.startButton);
     	startButtonState.setClickable(state);
@@ -173,5 +173,12 @@ public class MainActivity extends Activity {
 		TextView displayCalculationsTextView = (TextView) findViewById(R.id.activePlayerText);
 		displayCalculationsTextView.setText(input);
 	}
+ 	
+ 	private boolean checkWin(){
+ 		return false;
+ 	}
+ 	
+ 	}
+ 	
   
 }
